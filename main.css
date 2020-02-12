@@ -1,0 +1,21 @@
+.carousel{
+    position: relative;
+    height: 600px;
+    width:80%;
+    margiun: 0 auto;
+}
+
+.carousel__image{
+    width:100%;
+}
+
+.carousel__track-container{
+    background: lightgreen;
+    padding: 10px;
+}
+
+.carousel__track{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
