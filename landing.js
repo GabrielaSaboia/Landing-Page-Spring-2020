@@ -17,7 +17,7 @@ images[6] = 'images/image7.jpg';
 //change image
 
 function changeImg() {
-    document.slide.src = images[i];
+    document.getElementsByTagName("img").src = images[i];
 
     if(i < images.length -1){
         i++;
