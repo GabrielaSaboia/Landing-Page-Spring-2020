@@ -2,14 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <title>We need a title!!!</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
 
-<h1>Hello E-Commerce</h1>
-<img name="slide" width="400" height="200">
+<div class="carousel">
 
+    <button class="carousel__button carousel__button--left">
+        <img src="image/left.svg">
+    </button>
+
+    <div class="carousel__track-container">
+        <ul class="carousel__track">
+            <li class="carousel__slide">
+                <img src="images/image1.jpg" alt="Beach1">
+            </li>
+            <li class="carousel__slide">
+                <img src="images/image2.jpg" alt="Beach2">
+            </li>
+            <li class="carousel__slide">
+                <img src="images/image3.jpg" alt="Beach3">
+            </li>
+        </ul>
+    </div>
+
+    <button class="carousel-button carousel__button--right">
+        <img src="image/right.svg" alt="slide button">
+    </button>
+
+    <div class="carousel__nav">
+        <button class="carousel__indicator"></button>
+        <button class="carousel__indicator"></button>
+        <button class="carousel__indicator"></button>
+    </div>
+</div>
 <footer>&copy;Beach Sales 2020</footer>
     <script src="landing.js"></script>
 </body>
