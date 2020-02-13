@@ -21,7 +21,6 @@ const moveToSlide = (track, currentSlide, targetSlide) => {
 }
 
 const updateDots = (currentDot, targetDot) => {
-
     currentDot.classList.remove('current-slide');
     targetDot.classList.add('current-slide');
 }
