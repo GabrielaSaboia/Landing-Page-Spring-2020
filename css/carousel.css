@@ -1,8 +1,9 @@
+/* Carousel css */
 .carousel{
     position: relative;
     height: 450px;
-    width:80%;
-    margiun: 0 auto;
+    width:95%;
+    margin: 0 auto;
 }
 
 .carousel__image{
@@ -12,7 +13,7 @@
 }
 
 .carousel__track-container{
-    background: lightgreen;
+    /*background: lightgreen;*/
     padding: 0;
     height: 100%;
     position: relative;
@@ -45,7 +46,7 @@
     cursor: pointer;
 }
 .carousel__button--left{
-    left: -25px;
+    left: -35px;
 }
 .carousel__button--right{
     right: -40px;
@@ -54,7 +55,6 @@
     width: 15px;
 }
 .carousel__nav{
-    background: pink;
     display: flex;
     justify-content: center;
     padding: 10px 0;
