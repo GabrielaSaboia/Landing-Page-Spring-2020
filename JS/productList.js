@@ -1,7 +1,7 @@
 //mock database for product list in JSON
 
-var mockDatabase = [
-    { _id: '123', name: 'Article 1', published: true },
+var database = [
+    { _id: '123', image: 'Article 1', title: true },
     { _id: '583', name: 'Article 2', published: true },
     { _id: '954', name: 'Article 3', published: false },
     { _id: '384', name: 'Article 4', published: false },
