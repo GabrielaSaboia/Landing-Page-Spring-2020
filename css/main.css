@@ -33,7 +33,16 @@ p {
 
 /*footer*/
 footer{
-    padding: 0 15px;
+    background-color: rgba(84, 84, 84, .3);
     bottom: 0;
 }
 
+footer p, footer a {
+    font-size: 11px;
+    padding:  0 35px 15px;
+    margin: 0;
+}
+footer a{
+    color: #fff;
+
+}
