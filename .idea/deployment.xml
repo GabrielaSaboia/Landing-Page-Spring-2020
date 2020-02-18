@@ -5,7 +5,7 @@
       <paths name="afs">
         <serverdata>
           <mappings>
-            <mapping deploy="https://web.njit.edu/~gs525/Landing-Page-Spring-2020" local="$PROJECT_DIR$" web="/Landing-Page-Spring-2020" />
+            <mapping deploy="https://web.njit.edu/~dfs23/Landing-Page-Spring-2020" local="$PROJECT_DIR$" web="/Landing-Page-Spring-2020" />
           </mappings>
         </serverdata>
       </paths>
