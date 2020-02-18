@@ -34,9 +34,20 @@
         <button type="button" id="button3">Button 3</button>
     </div>
 
-    <div class="content-container">
-        <div class = "card"></div>
-        <div class = "card"></div>
+    <div class="content-container" id="page-wrapper">
+        <div class="filter-wrapper">
+            <div class="form-group" style="margi-right: 20 px;">
+                    <label for="orderBy">Category</label>
+                    <select id="orderBy" name="orderBY">
+                        <option value="location">Location</option>
+                        <option value="faunaflora">Fauna & Flora</option>
+                        <option value="price">Price</option>
+                    </select>
+            </div>
+            <div class = "card"></div>
+            <div class = "card"></div>
+
+        </div>
     </div>
 
     <script type="text/javascript" src="productList.js"></script>
