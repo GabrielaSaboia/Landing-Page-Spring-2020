@@ -1,6 +1,96 @@
-html,body{
+html, body {
     min-height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #403938;
+    background-color: lightblue;
+}
+
+.app-container {
+    width: 1024px;
+    margin: auto;
+    display: flex;
+    min-height: 100%;				/*app conntainer extends entire height of the page*/
+    background-color: white;
+}
+
+.navigation {
+    flex: 0 0 150px;
+    min-height: 100%;
+    background-color: #3333FF;
+}
+
+.navigation a {
+    display: block;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.navigation a:hover {			/*psudo selector...a hover for state*/
+    color: red;
+}
+
+.content-container {
+    flex: 1 1 auto;
+    width: 100%;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-container .card {
+    height: 195px;
+    flex: 0 0 195px;
+    background-color: #bfbfbf;
+    border: 3px solid #333;
+    margin: 5px;
+}
+
+@media only screen and (max-width: 1199px) {			/*only = applies only on this screen. "and" means both conditions must be true*/
+    .app-container {									/*if anything is under 1199 px this styling gets aapplied*/
+        flex-direction: column;
+        width: 900px;
+    }
+
+    .navigation {
+        min-height: auto;
+        flex: 0 0 35px;
+    }
+
+    .navigation a {
+        display: inline-block;
+    }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 1000px) { /*range of width: (min-width) above 750px but below (max-width) 100px*/
+    .app-container {
+        width: 720px;
+    }
+
+    .content-container .card {
+        flex-basis: 330px;			/*cards get bigger*/
+        height: 330px;
+    }
+}
+
+@media only screen and (max-width: 749px) { /*anything under 749 px*/
+    .app-container {
+        margin: 0 15px;
+        width: calc(100% - 30px);			/*100% size of container minus 30px*/ /*what browser, what version, what device model, and even screen resolution*/
+        /*EM = more relative units. looks for relative pixels*/
+        /*percentages are relatively good*/
+        /*EM or PC are good */
+    }
+
+    .content-container {
+        width: calc(100% - 50px);
+    }
+
+    .content-container .card {
+        height: 50px;
+        flex-basis: 100%;
+    }
 }
