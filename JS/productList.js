@@ -97,27 +97,28 @@
 
         cardContainer.innerHTML = results.map(function (beach,index){
             return(`
-                       
-                        <div class = "card-group">
-                           
-                                <div class="card">
+                       <div class = "container">
+                                <div class = "card-group">
+                                   
+                                        <div class="card">
+                                          
+                                 
+                                             
+                                                    
+                                                    <img class="card-img-top" src = "${beach.image}" class="img-fluid">
+                                                    <div class ="card-body">
+                                                        <h5 class = "card-title">${beach.name}</h5>
+                                                        <p class = "card-text">$${beach.price} BILL USD</p>
+                                                    </div>
+                                                 
                                   
-                         
-                                     
-                                            
-                                            <img class="card-img-top" src = "${beach.image}" class="img-fluid">
-                                            <div class ="card-body">
-                                                <h5 class = "card-title">${beach.name}</h5>
-                                                <p class = "card-text">$${beach.price} BILL USD</p>
-                                            </div>
-                                         
-                          
-                                     
-                                     
-                                 </div>
-                              
-                           
-                            
+                                             
+                                             
+                                         </div>
+                                      
+                                   
+                                    
+                                </div>
                         </div>
                         
                      
