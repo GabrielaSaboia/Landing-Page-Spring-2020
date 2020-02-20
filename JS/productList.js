@@ -97,12 +97,12 @@
 
         cardContainer.innerHTML = results.map(function (beach,index){
             return(`
-                       <!--
+                       
                         <div class = "container">
                            
                                 <div class="row">
                                     <div class="col-md-3 col-sm-6">
-                         -->
+                         
                                         <div class = "card">    
                                             
                                             <img src = "${beach.image}" class="img-fluid">
@@ -112,7 +112,7 @@
                                             </div>
                                             </img>
                                          </div>
-                        <!--             
+                                     
                                      </div>
                                      
                                  </div>
@@ -120,7 +120,7 @@
                            
                             
                         </div>
-                        -->
+                        
                      
                 `)
         }).reduce((a, b) => a.concat(b), "")    //a (empty string) same thing consistently. b is new thing. b element in list.
