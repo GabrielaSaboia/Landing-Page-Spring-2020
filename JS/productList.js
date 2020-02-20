@@ -102,7 +102,7 @@
                             <div class = "card-deck">
           
                            
-                                    <div class = "card" class="img-fluid"">    
+                                    <div class = "card" class="img-fluid">    
                                         
                                         <img class ="card-img-top" src = "${beach.image}">
                                         <div class ="card-body">
