@@ -98,13 +98,12 @@
         cardContainer.innerHTML = results.map(function (beach,index){
             return(`
                     <div class = "card-deck">
-                        <div class = "card">
-                    
-                                
-                                    <img src = "${beach.image}" class=" card-img-top"></img>
-                
-                                
-                           
+                        <div class = "card">    
+                            <img class ="card-img-top" src = "${beach.image}" alt="Card image cap">
+                            <div class ="card-body">
+                                <h5 class = "card-title">"${beach.name}"</h5>
+                                <p class = "card-text">"${beach.price}"</p>
+                             </div>
                         </div>
                     </div>
                 `)
