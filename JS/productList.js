@@ -102,10 +102,12 @@
           
                                 <!--<div class = "col-sm-4"> --->
                                     <div class = "card" style="width: 20rem; display:inline-block;">    
+                                        <div class = "col-sm-4">
                                         <img class ="card-img-top" src = "${beach.image}" alt="Card image cap">
                                         <div class ="card-body">
                                             <h5 class = "card-title">${beach.name}</h5>
                                             <p class = "card-text">$${beach.price} BILL USD</p>
+                                         </div>
                                          </div>
                                     </div>
                                 <!--</div> --->
