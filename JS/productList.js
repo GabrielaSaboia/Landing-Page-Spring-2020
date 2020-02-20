@@ -102,7 +102,7 @@
                            
                                         <div class = "card-deck">
                                            
-                                                <div class="card card-inverse card-success text-center col-md-3 col-lg-2 col-x1-1" style = "min-width: 30rem;">
+                                                <div class="card card-inverse card-success col-x1-1" style = "min-width: 30rem;">
                                                   
                                          
                                                      
