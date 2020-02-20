@@ -109,6 +109,7 @@
                                                 <h5 class = "card-title">${beach.name}</h5>
                                                 <p class = "card-text">$${beach.price} BILL USD</p>
                                             </div>
+                                            </img>
                                          </div>
                                      </div>
                                  </div>
