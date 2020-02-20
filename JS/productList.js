@@ -98,7 +98,7 @@
         cardContainer.innerHTML = results.map(function (beach,index){
             return(`
                        
-                        <div class = "card-deck">
+                        <div class = "container">
                             <div class = "row">
           
                                 <div class = "col-4"> 
