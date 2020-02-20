@@ -100,7 +100,7 @@
                        
                         <div class = "card-deck">
           
-                                <div class = "row-sm-4"> 
+                                <div class = "col-4"> 
                                     <div class = "card" style="width: 20rem; display:inline-block;">    
                                         
                                         <img class ="card-img-top" src = "${beach.image}" alt="Card image cap">
