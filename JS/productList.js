@@ -99,10 +99,10 @@
             return(`
                        
                         <div class = "container">
-                            <div class = "row">
+                            <div class = "card-deck">
           
-                                <div class = "col-4"> 
-                                    <div class = "card" style="width: 20rem; display:inline-block;">    
+                           
+                                    <div class = "card" class="img-fluid"">    
                                         
                                         <img class ="card-img-top" src = "${beach.image}" alt="Card image cap">
                                         <div class ="card-body">
@@ -111,7 +111,7 @@
                                          </div>
                                          
                                     </div>
-                                </div>
+                                
                             </div>
                             
                         </div>
