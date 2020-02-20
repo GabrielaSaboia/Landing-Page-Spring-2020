@@ -1,6 +1,5 @@
 //mock database for product list in JSON
 (function() {
-    let filter = 0;
     let name = 0;
     let location = 0;
     let price = 0;
@@ -129,6 +128,24 @@
     }                                           //for loop under hood updating empty string a with an element b
 
     render(database);
+
+    namedrop_Menu.addEventListener('change', function(event){
+        name = event.target.selectedIndex
+        render()
+    })
+
+    locdrop_Menu.addEventListener('change', function(event){
+        location = event.target.selectedIndex
+        render()
+    })
+
+    pricedrop_Menu.addEventListener('change', function(event){
+        price = event.target.selectedIndex
+        render()
+    })
+
+
+
 })() //wrapping entire file with locally exec function
       //variable scope: local scope
 
