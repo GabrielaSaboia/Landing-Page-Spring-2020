@@ -97,19 +97,21 @@
 
         cardContainer.innerHTML = results.map(function (beach,index){
             return(`
-                    <div class = "card-deck">
-                        <div class = "row">
-                            <div class = "col-sm-4">
-                                <div class = "card">    
-                                    <img class ="card-img-top" src = "${beach.image}" alt="Card image cap">
-                                    <div class ="card-body">
-                                        <h5 class = "card-title">${beach.name}</h5>
-                                        <p class = "card-text">$${beach.price} BILL USD</p>
-                                     </div>
+                    <div class = "row">    
+                        <div class = "card-deck">
+          
+                                <div class = "col-sm-4">
+                                    <div class = "card">    
+                                        <img class ="card-img-top" src = "${beach.image}" alt="Card image cap">
+                                        <div class ="card-body">
+                                            <h5 class = "card-title">${beach.name}</h5>
+                                            <p class = "card-text">$${beach.price} BILL USD</p>
+                                         </div>
+                                    </div>
                                 </div>
-                            </div>
+                            
                         </div>
-                    </div>
+                     </div>
                 `)
         }).reduce((a, b) => a.concat(b), "")    //a (empty string) same thing consistently. b is new thing. b element in list.
     }                                           //for loop under hood updating empty string a with an element b
