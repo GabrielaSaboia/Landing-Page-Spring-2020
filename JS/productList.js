@@ -101,7 +101,7 @@
                             <div class ="col-12">
                                 <div class = "card-deck">
                                    
-                                        <div class="card mb-3" style = "min-width: 20rem;">
+                                        <div class="card" style = "min-width: 30rem;">
                                           
                                  
                                              
