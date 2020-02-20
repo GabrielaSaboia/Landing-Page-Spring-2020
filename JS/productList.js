@@ -13,6 +13,7 @@
     const names = new Set()
     const locations = new Set()
 
+    //using lecture notes for testing knowledge
     function nameFilter(beach) {
         var sortedResult = (beach === 'name') ?
             database.sort(function(a, b) {
@@ -26,18 +27,34 @@
                     return 1;
                 }
             }):
-                database.sort(function(a,b){
+            database.sort(function(a,b){
 
                 return a[beach] - b[beach];
             });
             render(sortedResult);
     }
+    function locationFilter(beach){
+        var sortedResult =
+            database.sort(function(a, b) {
+                var nameA = a.location.toUpperCase();
+                var nameB = b.location.toUpperCase();
 
-    function locationFilter(beach) {
-
+                if (nameA < nameB) {
+                    return -1;
+                }
+                if (nameA > nameB) {
+                    return 1;
+                }
+            });
+            render(sortedResult);
     }
 
     function priceFilter(beach) {
+        var sortedResult = database.sort(function(a,b){
+
+            return a[beach] - b[beach];
+        });
+        render(sortedResult);
 
     }
 
