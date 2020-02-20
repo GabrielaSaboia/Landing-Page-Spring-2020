@@ -99,6 +99,7 @@
             return(`
                        
                         <div class = "card-deck">
+                            <div class = "row">
           
                                 <div class = "col-4"> 
                                     <div class = "card" style="width: 20rem; display:inline-block;">    
@@ -111,6 +112,7 @@
                                          
                                     </div>
                                 </div>
+                            </div>
                             
                         </div>
                      
