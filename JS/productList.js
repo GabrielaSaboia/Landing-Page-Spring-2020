@@ -104,7 +104,7 @@
                            
                                     <div class = "card" class="img-fluid"">    
                                         
-                                        <img class ="card-img-top" src = "${beach.image}" alt="Card image cap">
+                                        <img class ="card-img-top" src = "${beach.image}">
                                         <div class ="card-body">
                                             <h5 class = "card-title">${beach.name}</h5>
                                             <p class = "card-text">$${beach.price} BILL USD</p>
