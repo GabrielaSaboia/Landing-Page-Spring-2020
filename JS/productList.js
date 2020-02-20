@@ -100,7 +100,7 @@
                        
                         <div class = "card-deck">
           
-                                <div class = "col-sm-4">
+                                <!--<div class = "col-sm-4"> --->
                                     <div class = "card">    
                                         <img class ="card-img-top" src = "${beach.image}" alt="Card image cap">
                                         <div class ="card-body">
@@ -108,7 +108,7 @@
                                             <p class = "card-text">$${beach.price} BILL USD</p>
                                          </div>
                                     </div>
-                                </div>
+                                <!--</div> --->
                             
                         </div>
                      
