@@ -101,7 +101,7 @@
                         <div class = "card-deck">
           
                                 <!--<div class = "col-sm-4"> --->
-                                    <div class = "card">    
+                                    <div class = "card" style:"width: 20rem>    
                                         <img class ="card-img-top" src = "${beach.image}" alt="Card image cap">
                                         <div class ="card-body">
                                             <h5 class = "card-title">${beach.name}</h5>
