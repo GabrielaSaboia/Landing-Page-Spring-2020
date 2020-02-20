@@ -52,7 +52,9 @@
                 `)
         }).reduce((a, b) => a.concat(b), "")
     }
+
+    render(database);
 })() //wrapping entire file with locally exec function
       //variable scope: local scope
 
-    render(database);
+
