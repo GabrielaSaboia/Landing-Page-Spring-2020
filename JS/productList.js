@@ -98,11 +98,11 @@
         cardContainer.innerHTML = results.map(function (beach,index){
             return(`
                        <div class = "card-deck-wrapper">
-                              <div class="row">
-                                    <div class ="col-3">
+                              
+                           
                                         <div class = "card-deck">
                                            
-                                                <div class="card" style = "min-width: 30rem;">
+                                                <div class="card card-inverse card-success text-center col-xs-6 col-sm-4 col-md-3 col-lg-2 col-x1-1" style = "min-width: 30rem;">
                                                   
                                          
                                                      
@@ -121,8 +121,7 @@
                                            
                                             
                                         </div>
-                                    </div>
-                               </div>
+                     
                         </div>
                         
                      
