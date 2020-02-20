@@ -101,7 +101,7 @@
                         <div class = "container">
                            
                                 <div class="row">
-                                    <div class="col-md-3 col-sm-6">
+                                  
                          
                                         <div class = "card">    
                                             
@@ -113,7 +113,6 @@
                                             </img>
                                          </div>
                                      
-                                     </div>
                                      
                                  </div>
                               
