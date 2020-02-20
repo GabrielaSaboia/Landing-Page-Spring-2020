@@ -14,7 +14,23 @@
     const locations = new Set()
 
     function nameFilter(beach) {
+        var sortedResult = (beach === 'name') ?
+            database.sort(function(a, b) {
+                var nameA = a.name.toUpperCase();
+                var nameB = b.name.toUpperCase();
 
+                if (nameA < nameB) {
+                    return -1;
+                }
+                if (nameA > nameB) {
+                    return 1;
+                }
+            }):
+                database.sort(function(a,b){
+
+                return a[beach] - b[beach];
+            });
+            render(sortedResult);
     }
 
     function locationFilter(beach) {
