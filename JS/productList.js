@@ -102,9 +102,9 @@
                             <div class = "card-deck">
           
                            
-                                    <div class = "card" class="img-fluid">    
+                                    <div class = "card">    
                                         
-                                        <img class ="card-img-top" src = "${beach.image}">
+                                        <img src = "${beach.image}" class="img-fluid">
                                         <div class ="card-body">
                                             <h5 class = "card-title">${beach.name}</h5>
                                             <p class = "card-text">$${beach.price} BILL USD</p>
