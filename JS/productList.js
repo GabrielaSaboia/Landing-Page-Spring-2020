@@ -100,18 +100,19 @@
                        
                         <div class = "container">
                             <div class = "card-deck">
-          
-                           
-                                    <div class = "card">    
-                                        
-                                        <img src = "${beach.image}" class="img-fluid">
-                                        <div class ="card-body">
-                                            <h5 class = "card-title">${beach.name}</h5>
-                                            <p class = "card-text">$${beach.price} BILL USD</p>
-                                         </div>
-                                         
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class = "card">    
+                                            
+                                            <img src = "${beach.image}" class="img-fluid">
+                                            <div class ="card-body">
+                                                <h5 class = "card-title">${beach.name}</h5>
+                                                <p class = "card-text">$${beach.price} BILL USD</p>
+                                            </div>
+                                             
+                                        </div>
                                     </div>
-                                
+                                </div>
                             </div>
                             
                         </div>
