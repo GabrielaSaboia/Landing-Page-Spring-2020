@@ -98,7 +98,7 @@
         cardContainer.innerHTML = results.map(function (beach,index){
             return(`
                        <div class = "container">
-                            <div class ="col-12">
+                            <div class ="col-3">
                                 <div class = "card-deck">
                                    
                                         <div class="card" style = "min-width: 30rem;">
