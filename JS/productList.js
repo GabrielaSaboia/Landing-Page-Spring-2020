@@ -11,7 +11,7 @@
     const pricedrop_Menu = document.querySelector("#price_dropdown");
 
     const names = new Set()
-    
+
     const locations = new Set()
 
     //using lecture notes for testing knowledge
