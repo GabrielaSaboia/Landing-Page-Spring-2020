@@ -98,29 +98,31 @@
         cardContainer.innerHTML = results.map(function (beach,index){
             return(`
                        <div class = "container">
-                            <div class ="col-3">
-                                <div class = "card-deck">
-                                   
-                                        <div class="card" style = "min-width: 30rem;">
+                              <div class="row">
+                                    <div class ="col-3">
+                                        <div class = "card-deck">
+                                           
+                                                <div class="card" style = "min-width: 30rem;">
+                                                  
+                                         
+                                                     
+                                                            
+                                                            <img class="card-img-top img-adjusted" src = "${beach.image}" class="img-fluid">
+                                                            <div class ="card-body">
+                                                                <h5 class = "card-title">${beach.name}</h5>
+                                                                <p class = "card-text">$${beach.price} BILL USD</p>
+                                                            </div>
+                                                         
                                           
-                                 
-                                             
-                                                    
-                                                    <img class="card-img-top img-adjusted" src = "${beach.image}" class="img-fluid">
-                                                    <div class ="card-body">
-                                                        <h5 class = "card-title">${beach.name}</h5>
-                                                        <p class = "card-text">$${beach.price} BILL USD</p>
-                                                    </div>
-                                                 
-                                  
-                                             
-                                             
-                                         </div>
-                                      
-                                   
-                                    
-                                </div>
-                            </div>
+                                                     
+                                                     
+                                                 </div>
+                                              
+                                           
+                                            
+                                        </div>
+                                    </div>
+                               </div>
                         </div>
                         
                      
