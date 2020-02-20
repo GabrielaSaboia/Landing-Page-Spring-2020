@@ -100,10 +100,9 @@
                        <div class = "card-deck-wrapper">
                               
                            
-                                        <div class = "row">
-                                         
-                                            <div class="col-lg-3 col-md-6"
-                                                <div class="card">
+                                        <div class = "card-deck">
+                                           
+                                                <div class="card" style = "min-width: 30rem;">
                                                   
                                          
                                                      
@@ -118,7 +117,7 @@
                                                      
                                                      
                                                  </div>
-                                             </div>
+                                              
                                            
                                             
                                         </div>
