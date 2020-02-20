@@ -100,7 +100,7 @@
                        <div class = "container">
                                 <div class = "card-deck">
                                    
-                                        <div class="card">
+                                        <div class="card" width="300px" height="300px">
                                           
                                  
                                              
