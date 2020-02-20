@@ -97,7 +97,7 @@
 
         cardContainer.innerHTML = results.map(function (beach,index){
             return(`
-                <div class = "col-4">
+                <div class = "card-group">
                     <img src = "${beach.image}" class=" card-img-top"></img>
 
                 </div>
