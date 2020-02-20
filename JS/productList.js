@@ -39,18 +39,18 @@
     ];
 
     function render(results) {
-        var cardContainer = document.querySelector('#results-cards beaches');
+        var cardContainer = document.querySelector('#results-cards-beaches');
 
         cardContainer.innerHTML = '';
 
-        var cardRows = results.map(function (beach,index){
+        cardContainer.innerHTML = results.map(function (beach,index){
             return(`
                 <div class = "card">
                     <img src = "${beach.image}" class=" card-img-top"></img>
 
                 </div>
                 `)
-        })
+        }).reduce((a, b) => a.concat(b), "")
     }
 })() //wrapping entire file with locally exec function
       //variable scope: local scope
