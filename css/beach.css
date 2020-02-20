@@ -1,11 +1,4 @@
-body{
-    display: flex;
-}
 .card{
-    height: 330px;
-    width: 330px;
-    display: inline-block;
-    margin: 12px 18px;
-    display: flex;
-    flex-direction: column;
+    padding: 0;
+    position: relative;
 }
