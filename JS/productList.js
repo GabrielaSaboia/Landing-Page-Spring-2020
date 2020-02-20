@@ -4,11 +4,15 @@
     let name = 0;
     let location = 0;
     let price = 0;
+    let beachlist = []
 
 
     const namedrop_Menu = document.querySelector("#name_dropdown");
     const locdrop_Menu = document.querySelector("#loc_dropdown");
     const pricedrop_Menu = document.querySelector("#price_dropdown");
+
+    const names = new Set()
+    const locations = new Set()
 
     function nameFilter(beach) {
 
