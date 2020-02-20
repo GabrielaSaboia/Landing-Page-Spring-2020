@@ -50,8 +50,8 @@
 
                 </div>
                 `)
-        }).reduce((a, b) => a.concat(b), "")
-    }
+        }).reduce((a, b) => a.concat(b), "")    //a (empty string) same thing consistently. b is new thing. b element in list.
+    }                                           //for loop under hood updating empty string a with an element b 
 
     render(database);
 })() //wrapping entire file with locally exec function
