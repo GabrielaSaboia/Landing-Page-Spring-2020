@@ -43,10 +43,10 @@
 
         cardContainer.innerHTML = '';
 
-        var cardRows = results.map(function (result,index){
+        var cardRows = results.map(function (beach,index){
             return(`
-                <div class = "beach-card">
-                    <img src = "${beach.image}"></img>
+                <div class = "card">
+                    <img src = "${beach.image}" class=" card-img-top"></img>
 
                 </div>
                 `)
