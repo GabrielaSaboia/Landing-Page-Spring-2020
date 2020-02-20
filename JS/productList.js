@@ -97,14 +97,14 @@
 
         cardContainer.innerHTML = results.map(function (beach,index){
             return(`
-                    <div class = "card-columns">
-                        <div class = "row">
-                            <div class = "col-3">
-                                <div class = "card-group">
+                    <div class = "card-deck">
+                        <div class = "card">
+                    
+                                
                                     <img src = "${beach.image}" class=" card-img-top"></img>
                 
-                                </div>
-                            </div>
+                                
+                           
                         </div>
                     </div>
                 `)
