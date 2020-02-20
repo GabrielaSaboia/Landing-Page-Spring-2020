@@ -97,7 +97,7 @@
 
         cardContainer.innerHTML = results.map(function (beach,index){
             return(`
-                       <div class = "card-deck-wrapper">
+                       
                               
                            
                                         <div class = "card-deck">
@@ -122,8 +122,7 @@
                                             
                                         </div>
                      
-                        </div>
-                        
+                                                
                      
                 `)
         }).reduce((a, b) => a.concat(b), "")    //a (empty string) same thing consistently. b is new thing. b element in list.
