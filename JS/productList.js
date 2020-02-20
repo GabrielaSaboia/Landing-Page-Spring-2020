@@ -97,10 +97,16 @@
 
         cardContainer.innerHTML = results.map(function (beach,index){
             return(`
-                <div class = "card-group">
-                    <img src = "${beach.image}" class=" card-img-top"></img>
-
-                </div>
+                    <div class = "container">
+                        <div class = "row">
+                            <div class = "col-3">
+                                <div class = "card-group">
+                                    <img src = "${beach.image}" class=" card-img-top"></img>
+                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 `)
         }).reduce((a, b) => a.concat(b), "")    //a (empty string) same thing consistently. b is new thing. b element in list.
     }                                           //for loop under hood updating empty string a with an element b
