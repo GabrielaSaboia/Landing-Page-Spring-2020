@@ -6,9 +6,9 @@
     let beachlist = []
 
 
-    const namedrop_Menu = document.querySelector("#name_dropdown");
-    const locdrop_Menu = document.querySelector("#loc_dropdown");
-    const pricedrop_Menu = document.querySelector("#price_dropdown");
+    const namedrop_Menu = document.querySelector("#name");
+    const locdrop_Menu = document.querySelector("#location");
+    const pricedrop_Menu = document.querySelector("#price");
 
     const names = new Set()
 
