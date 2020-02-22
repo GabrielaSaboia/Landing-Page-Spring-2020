@@ -136,7 +136,7 @@
                                     <img class="card-img-top img-adjusted" src = "${beach.image}" class="img-fluid">
                                     <div class ="card-body">
                                         <h5 class = "card-title">${beach.name}</h5>
-                                        <p class = "card-text">$${beach.price} BILL USD</p>
+                                        <p class = "card-text">$${beach.price} MILL USD</p>
                                     </div>                   
                          </div>
                 </div>
