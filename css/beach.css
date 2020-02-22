@@ -8,6 +8,11 @@ body{
     background-color: #403938;
 }
 
+nav.navbar.navbar-dark{
+
+    box-shadow: 1px 3px 3px rgba(231, 242, 242, .1);
+}
+
 #results-cards {
     width: 100%;
 }
