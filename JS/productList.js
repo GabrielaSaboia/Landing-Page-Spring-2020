@@ -149,7 +149,7 @@
 
     function Location(ShowLocation){
         var locationresult = database.filter(function(selection){
-            if(ShowLocation === beach.location)
+            if(ShowLocation === selection.location)
                 return selection.location;
         });
         render(locationresult);
