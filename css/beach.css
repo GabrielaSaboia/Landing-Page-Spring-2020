@@ -1,3 +1,12 @@
 .card-deck .card{
     max-width: calc(25% - 30px);
 }
+
+.filter-wrapper{
+    display: flex;
+    margin: 15px 0;
+}
+
+#results-cards {
+    width: 100%;
+}
