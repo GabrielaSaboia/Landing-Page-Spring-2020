@@ -18,14 +18,16 @@ nav.navbar.navbar-dark{
 }
 
 ***/
+/***
 .dropdown{
     display: inline;
 }
-
+***/
+/***
 #results-cards {
     width: 100%;
 }
-
+***/
 .app-container{
     width:1024px;
     margin:auto;
