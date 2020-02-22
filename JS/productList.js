@@ -132,7 +132,7 @@
         cardContainer.innerHTML = results.map(function (beach,index){
             return(`
                 <div class = "card-deck">
-                        <div class="card" style = "min-width: 30rem;">
+                        <div class="card" style = "min-width: 20rem;">
                                     <img class="card-img-top img-adjusted" src = "${beach.image}" class="img-fluid">
                                     <div class ="card-body">
                                         <h5 class = "card-title">${beach.name}</h5>
