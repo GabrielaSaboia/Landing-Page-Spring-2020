@@ -1,5 +1,8 @@
 .card-deck .card{
-    max-width: calc(25% - 30px);
+    height: 200px;
+    flex: 0 0 300px;
+    background-color: #403938;
+    margin: 10px 15px;
 }
 
 .filter-wrapper{
@@ -9,4 +12,14 @@
 
 #results-cards {
     width: 100%;
+}
+
+.app-container{
+    width:1024px;
+    margin:auto;
+    display:flex;
+    min-height: 100%;
+    background-color: #403938;
+
+
 }
