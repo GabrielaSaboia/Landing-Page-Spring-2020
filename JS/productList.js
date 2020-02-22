@@ -55,6 +55,7 @@
     }
      ***/
 
+    /****
     function priceFilter(beach) {
         var sortedResult = database.sort(function(a,b){
 
@@ -63,6 +64,7 @@
         render(sortedResult);
 
     }
+     ****/
 
     var database = [
         {
