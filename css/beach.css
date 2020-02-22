@@ -52,13 +52,15 @@ content-container{
     display: flex;
     flex-wrap: wrap;
 }
-
+/*
 .card{
     height: 50px;
     flex: 0 0 300px;
     background-color: #403938;
     display: inline-block;
     margin: 10px 15px;
+    
+ */
 }
 
 
