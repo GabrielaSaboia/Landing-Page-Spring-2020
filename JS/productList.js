@@ -173,7 +173,7 @@
     ****/
     locdrop_Menu.addEventListener('change', function(event){
         var value = event.target.selectedIndex;
-        render(value);
+        Location(value);
     });
     /***
     pricedrop_Menu.addEventListener('change', function(event){
