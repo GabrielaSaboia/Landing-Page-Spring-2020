@@ -63,6 +63,9 @@ content-container .card{
     margin: 10px 15px;
 }
 ****/
+.price, .location{
+    display: inline-block
+}
 footer{
     padding: 0 15px;
     bottom: 0;
