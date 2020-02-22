@@ -148,9 +148,9 @@
 
 
     function Location(ShowLocation){
-        var locationresult = database.filter(function(selection){
-            if(ShowLocation === selection.location)
-                return selection.location;
+        var locationresult = database.filter(function(beach){
+            if(ShowLocation === beach.location)
+                return beach.location;
         });
         render(locationresult);
 
@@ -172,7 +172,7 @@
     })
     ****/
     locdrop_Menu.addEventListener('change', function(event){
-        var value = event.target.selectedIndex;
+        var value = event.target.value;
         Location(value);
     });
     /***
