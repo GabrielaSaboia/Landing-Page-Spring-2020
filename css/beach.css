@@ -12,6 +12,15 @@ nav.navbar.navbar-dark{
 
     box-shadow: 1px 3px 3px rgba(231, 242, 242, .1);
 }
+/***
+.div-inline{
+    display:inline-block;
+}
+
+***/
+.dropdown{
+    display: inline;
+}
 
 #results-cards {
     width: 100%;
