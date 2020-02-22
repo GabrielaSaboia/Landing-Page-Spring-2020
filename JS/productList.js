@@ -1,19 +1,20 @@
 //mock database for product list in JSON
 (function() {
+    /***
     let name = 0;
     let location = 0;
     let price = 0;
     let beachlist = []
+    ***/
 
-
-    const namedrop_Menu = document.querySelector("#name");
+    //const namedrop_Menu = document.querySelector("#name");
     const locdrop_Menu = document.querySelector("#location");
-    const pricedrop_Menu = document.querySelector("#price");
-
+    //const pricedrop_Menu = document.querySelector("#price");
+    /**
     const names = new Set()
 
     const locations = new Set()
-
+    **/
     //using lecture notes for testing knowledge
     function nameFilter(beach) {
         var sortedResult = (beach === 'name') ?
@@ -34,7 +35,7 @@
             });
             render(sortedResult);
     }
-    function locationFilter(beach){
+    function location(beach){
         var sortedResult =
             database.sort(function(a, b) {
                 var nameA = a.location.toUpperCase();
@@ -130,57 +131,59 @@
 
         cardContainer.innerHTML = results.map(function (beach,index){
             return(`
-                       
-                              
-                           
-                                        <div class = "card-deck">
-                                           
-                                                <div class="card" style = "min-width: 30rem;">
-                                                  
-                                         
-                                                     
-                                                            
-                                                            <img class="card-img-top img-adjusted" src = "${beach.image}" class="img-fluid">
-                                                            <div class ="card-body">
-                                                                <h5 class = "card-title">${beach.name}</h5>
-                                                                <p class = "card-text">$${beach.price} BILL USD</p>
-                                                            </div>
-                                                         
-                                          
-                                                     
-                                                     
-                                                 </div>
-                                              
-                                           
-                                            
-                                        </div>
-                     
-                                                
-                     
-                `)
+                <div class = "card-deck">
+                        <div class="card" style = "min-width: 30rem;">
+                                    <img class="card-img-top img-adjusted" src = "${beach.image}" class="img-fluid">
+                                    <div class ="card-body">
+                                        <h5 class = "card-title">${beach.name}</h5>
+                                        <p class = "card-text">$${beach.price} BILL USD</p>
+                                    </div>                   
+                         </div>
+                </div>
+            `)
         }).reduce((a, b) => a.concat(b), "")    //a (empty string) same thing consistently. b is new thing. b element in list.
     }                                           //for loop under hood updating empty string a with an element b
 
     render(database);
 
-    namedrop_Menu.addEventListener('change', function(event){
-        name = event.target.selectedIndex
-        render()
-    })
+
+    function Location(ShowLocation){
+        var locationresult = database.filter(function(selection){
+            if(ShowLocation === beach.location)
+                return selection.location;
+        });
+        render(locationresult);
+
+    }
 
     locdrop_Menu.addEventListener('change', function(event){
-        location = event.target.selectedIndex
+        var value = event.target.selectedIndex;
+        Location(value);
+    });
+
+
+
+
+
+    /****
+    namedrop_Menu.addEventListener('change', function(event){
+        name = event.target.selectedIndex;
         render()
     })
-
+    ****/
+    locdrop_Menu.addEventListener('change', function(event){
+        var value = event.target.selectedIndex;
+        render(value);
+    });
+    /***
     pricedrop_Menu.addEventListener('change', function(event){
-        price = event.target.selectedIndex
+        price = event.target.selectedIndex;
         render()
     })
+    ***/
 
 
-
-})() //wrapping entire file with locally exec function
+})(); //wrapping entire file with locally exec function
       //variable scope: local scope
 
 
