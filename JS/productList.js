@@ -8,7 +8,7 @@
     ***/
 
     //const namedrop_Menu = document.querySelector("#name");
-    const locdrop_Menu = document.querySelector("#location");
+    //const locdrop_Menu = document.querySelector("#location");
     //const pricedrop_Menu = document.querySelector("#price");
     /**
     const names = new Set()
@@ -16,6 +16,9 @@
     const locations = new Set()
     **/
     //using lecture notes for testing knowledge
+
+
+    /***
     function nameFilter(beach) {
         var sortedResult = (beach === 'name') ?
             database.sort(function(a, b) {
@@ -50,6 +53,7 @@
             });
             render(sortedResult);
     }
+     ***/
 
     function priceFilter(beach) {
         var sortedResult = database.sort(function(a,b){
@@ -171,7 +175,7 @@
         render()
     })
     ****/
-    locdrop_Menu.addEventListener('change', function(event){
+    document.querySelector('#location').addEventListener('change', function(event){
         var value = event.target.value;
         Location(value);
     });
