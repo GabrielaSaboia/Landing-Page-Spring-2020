@@ -155,12 +155,12 @@
         render(locationresult);
 
     }
-
+    /****
     locdrop_Menu.addEventListener('change', function(event){
         var value = event.target.selectedIndex;
         Location(value);
     });
-
+    ****/
 
 
 
