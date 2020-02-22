@@ -151,10 +151,10 @@
     render(database);
 
 
-    function Location(){
-        var locationresult = database.filter(function(beach,index){
-            if(ShowLocation === beach.location)
-                return beach.location;
+    function Location(ShowLocation){
+        var locationresult = database.filter(function(beach){
+            //if(ShowLocation === beach.location)
+                return ShowLocation;
         });
         render(locationresult);
 
