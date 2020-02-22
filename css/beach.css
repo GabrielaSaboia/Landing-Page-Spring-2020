@@ -63,3 +63,7 @@ content-container .card{
     margin: 10px 15px;
 }
 ****/
+footer{
+    padding: 0 15px;
+    bottom: 0;
+}
