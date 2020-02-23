@@ -5,6 +5,7 @@ const prevButton = document.querySelector('.carousel__button--left');
 const dotsNav = document.querySelector('.carousel__nav');
 const dots = Array.from(dotsNav.children);
 const slideWidth = slides[0].getBoundingClientRect().width;
+const htmlBody = document.documentElement;
 //console.log(slideWidth);
 
 
@@ -55,6 +56,8 @@ const slideShow = () => {
 
 //when I click left move slides to the left
 nextButton.addEventListener('click', slideShow);
+
+window.setInterval(slideShow, 2000);
 
 
 //when I click right, move slides to the right
