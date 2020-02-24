@@ -149,10 +149,11 @@
     function orderByPrice(price){
         if(price === "low") {
             //var sortedPrices = (price === 'low');
-            //var sortedPrices = (price === 'low');
-            var sortedPrices = database.sort(function (a, b) {
+            var sortedPrices;
+            sortedPrices = database.sort(function (a, b) {
                 //
-                return a[price] - b[price];
+                sortedPrices = a[price] - b[price];
+                return sortedPrices;
             });
         }
 
