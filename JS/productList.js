@@ -122,7 +122,7 @@
         orderBy(value);
     });
 
-    
+
     function Location(ShowLocation){
         var locationresult = database.filter(function(beach){
             if(beach.location === ShowLocation){
