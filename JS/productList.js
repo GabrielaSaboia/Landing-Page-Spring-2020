@@ -101,7 +101,7 @@
 
 
     function orderByInhabitants(inhabited) {
-        if (inhabited == "true") {
+        if (inhabited === "true") {
             var sortedResults = (inhabited === 'true');
 
 
@@ -111,7 +111,7 @@
             });
             render(filteredresults);
         }
-        if (inhabited == "false") {
+        else (inhabited === "false") {
             var sortedResults = (inhabited === 'false');            //trying to convert to boolean false
 
 
