@@ -159,6 +159,29 @@
     }
      ****/
 
+    function orderByPrice(price){
+        if(price === "low"){
+            var sortedPrices = (price === 'low')?
+                database.sort(function(a,b){
+                    var price1 = a.price;
+                    var price2 = b.price;
+
+                    if(price2 > price1){
+                        return -1;
+                    }
+                    if(price2 < price1){
+                        return 1;
+                    }
+                }) :
+
+                database.sort(function(a,b){
+                    return a[price] - b[price];
+                });
+            render(sortedPrices)
+        }
+
+    }
+
     document.querySelector('#price').addEventListener('change', function (event) {
         orderByPrice(event.target.value);
     });
