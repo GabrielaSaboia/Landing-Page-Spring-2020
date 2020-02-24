@@ -110,8 +110,8 @@
                     return sortedResults;
             });
             render(filteredresults);
-        }
-        else (inhabited === "false") {
+
+        } else if (inhabited === "false") {
             var sortedResults = (inhabited === 'false');            //trying to convert to boolean false
 
 
@@ -120,7 +120,6 @@
                     return result.inhabited;
             });
             render(filteredresults);
-
         }
     }
 
