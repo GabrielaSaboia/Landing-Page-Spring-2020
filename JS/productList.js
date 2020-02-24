@@ -9,7 +9,7 @@
 
     //const namedrop_Menu = document.querySelector("#name");
     const locdrop_Menu = document.querySelector("#location");
-    //const pricedrop_Menu = document.querySelector("#price");
+    const pricedrop_Menu = document.querySelector("#price");
     /**
     const names = new Set()
 
@@ -153,6 +153,54 @@
     render(database);
 
 
+
+    function orderBy(sortValue) {			//booleans count as numbers. 1 =true .0 = false
+        // Sort method varies based on what type of value we're sorting
+        var sortedResults = (sortValue === 'name') ?
+            mockDatabase.sort(function (a, b) { // Strings need to be sorted in a slightly more compldex way
+                var nameA = a.name.toUpperCase(); // ignore upper and lowercase
+                var nameB = b.name.toUpperCase(); // ignore upper and lowercase
+                // Sorts alphabetically.  -1 puts it before. 1 puts it after
+                if (nameA < nameB) {
+                    return -1;
+                }
+                if (nameA > nameB) {
+                    return 1;
+                }
+            }) :
+            mockDatabase.sort(function (a, b) { // Numbers a booleans are much simpler.
+                // Just need postive or negative number
+                // Object properties can be accessed through a string representing their name
+
+                //Im assuming this is for assuming that the category is a number (can check Article Id)
+                return a[sortValue] - b[sortValue];
+
+            });
+
+        renderList(sortedResults);
+    }
+
+
+
+    document.querySelector('#orderBy').addEventListener('change', function(event){
+        // Event is the JavaScript event that transpired, in our change a CHANGE event.
+        // Target is the element it was performed on, useful for when the event targets
+        // multiple elements.
+        // Value has the name implies is the current value of the input element, if there is one
+        orderBy(event.target.value);
+    });
+
+
+
+
+
+
+
+
+
+
+
+
     function Location(ShowLocation){
         var locationresult = database.filter(function(beach){
             if(beach.location === ShowLocation){
@@ -162,6 +210,12 @@
         render(locationresult);
 
     }
+
+    function Price(ShowPrice){
+
+    }
+
+
     /****
     locdrop_Menu.addEventListener('change', function(event){
         var value = event.target.selectedIndex;
