@@ -187,7 +187,7 @@
         orderBy(value);
     });
 
-    document.querySelector('#unnhabited').addEventListener('change', function(event){
+    document.querySelector('#uninhabited').addEventListener('change', function(event){
         var value = event.target.value === 'false';
         orderBy(value);
     });
