@@ -102,24 +102,25 @@
 
     function orderBy(inhabited) {			//booleans count as numbers. 1 =true .0 = false
         // Sort method varies based on what type of value we're sorting
-        if (inhabited === "true") {
-            var sortedResults = (inhabited === 'true')
+        if (inhabited == "true") {
+            var sortedResults = (inhabited === 'true');
 
 
-            var sortedResults = database.filter(function (result) {
-                if (inhabited === result.inhabited)
+            var filteredresults = database.filter(function (result) {
+                if (sortedResults === result.inhabited)
+                    return sortedResults;
+            });
+            render(filteredresults);
+        }
+        else if (inhabited == "false") {
+            var sortedResults = (inhabited === 'false');
+
+
+            var filteredresults = database.filter(function (result) {
+                if (sortedResults === result.inhabited)
                     return result.inhabited;
             });
-            render(sortedResults);
-        } else if (inhabited === "false") {
-            var sortedResults = (inhabited === 'false')
-
-
-            var sortedResults = database.filter(function (result) {
-                if (inhabited === result.inhabited)
-                    return result.inhabited;
-            });
-            render(sortedResults);
+            render(filteredresults);
 
         }
     }
