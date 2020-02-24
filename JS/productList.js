@@ -158,35 +158,7 @@
         render(filteredresults);
     }
 
-    document.querySelector('#price').addEventListener('change', function (event){
+    document.querySelector('#price').addEventListener('change', function (event) {
         orderByPrice(event.target.value);
-    }
-
-
-
-
-
-    if (inhabited === "true") {
-        var sortedResults = (inhabited === 'true');
-
-
-        var filteredresults = database.filter(function (result) {
-            if (sortedResults === result.inhabited)
-            //return sortedResults;
-                return result.inhabited;
-        });
-        render(filteredresults);
-
-    }
-
-
-
-
-
-
-
-
-
-
-
+    });
 })();
