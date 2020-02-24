@@ -146,6 +146,46 @@
         Location(value);
     });
 
+    function orderByPrice(price){
+        if(price === "low"){
+            //var sortedPrices = (price === 'low');
+
+            var filteredresults = database.sort(function (a,b){
+                return a[price] - b[price];
+            });
+
+        }
+        render(filteredresults);
+    }
+
+    document.querySelector('#price').addEventListener('change', function (event){
+        orderByPrice(event.target.value);
+    }
+
+
+
+
+
+    if (inhabited === "true") {
+        var sortedResults = (inhabited === 'true');
+
+
+        var filteredresults = database.filter(function (result) {
+            if (sortedResults === result.inhabited)
+            //return sortedResults;
+                return result.inhabited;
+        });
+        render(filteredresults);
+
+    }
+
+
+
+
+
+
+
+
 
 
 
