@@ -147,15 +147,28 @@
     });
 
     function orderByPrice(price){
-        if(price === "low"){
+        if(price === "low") {
             //var sortedPrices = (price === 'low');
+            //var sortedPrices = (price === 'low');
+            var sortedPrices = database.sort(function (a, b) {
+                //
+                return a[price] - b[price];
+            });
+        }
 
+
+
+            ///
+                /***
             var filteredresults = database.sort(function (a,b){
                 return a[price] - b[price];
             });
 
+            sortedPrices = filteredresults;
+
         }
-        render(filteredresults);
+                 ***/
+        render(sortedPrices);
     }
 
     document.querySelector('#price').addEventListener('change', function (event) {
