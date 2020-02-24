@@ -167,7 +167,7 @@
     function orderBy(inhabited) {			//booleans count as numbers. 1 =true .0 = false
         // Sort method varies based on what type of value we're sorting
         var filteredResults = database.filter(function(result){
-            return inhabited || result.inhabited; 
+            return inhabited || result.inhabited;
         });
         render(filteredResults);
     }
