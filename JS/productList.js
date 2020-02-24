@@ -99,7 +99,7 @@
     render(database);
 
 
-    /***
+
     function orderByInhabitants(inhabited) {
         if (inhabited === "true") {
             var sortedResults = (inhabited === 'true');
@@ -107,7 +107,7 @@
 
             var filteredresults = database.filter(function (result) {
                 if (sortedResults === result.inhabited)
-                    //return sortedResults;
+                //return sortedResults;
                     return result.inhabited;
             });
             render(filteredresults);
@@ -123,7 +123,6 @@
             render(filteredresults);
         }
     }
-     ****/
 
     document.querySelector('#inhabited').addEventListener('change', function(event){
         //var value = event.target.value === 'true';
