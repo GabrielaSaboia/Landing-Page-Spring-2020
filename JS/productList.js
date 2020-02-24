@@ -111,7 +111,7 @@
             });
             render(filteredresults);
         }
-        else if (inhabited == "false") {
+        if (inhabited == "false") {
             var sortedResults = (inhabited === 'false');            //trying to convert to boolean false
 
 
