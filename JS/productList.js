@@ -259,7 +259,12 @@
         var filteredResults = database.filter(function (result) {					//map will create an array of legnth of old value. filter returns true or false. true if value included. false if not
             // If showPublished is TRUE, always show.											///fals e if you do not want to include it in array
             // Otherweise only show if published is TRUE
-            return showInhabited || result.inhabited;
+
+
+            //return showInhabited || result.inhabited;
+            if(beach.inhabited === showInhabited){
+                return showInhabited;
+            }
         });
         render(filteredResults);
     }
