@@ -102,24 +102,88 @@
 
     function orderBy(inhabited) {			//booleans count as numbers. 1 =true .0 = false
         // Sort method varies based on what type of value we're sorting
-        if(inhabited === true) {
-            var filteredResults = database.filter(function (result) {
-                return result.inhabited;
+        if (inhabited === "true") {
+            var sortedResults = (inhabited === 'true')
+
+
+            var sortedResults = database.filter(function (result) {
+                if (inhabited === result.inhabited)
+                    return result.inhabited;
             });
-            render(filteredResults);
-        }
-        if(inhabited === false){
-            var filteredResults = database.filter(function (result) {
-                return result.inhabited;
+            render(sortedResults);
+        } else if (inhabited === "false") {
+            var sortedResults = (inhabited === 'false')
+
+
+            var sortedResults = database.filter(function (result) {
+                if (inhabited === result.inhabited)
+                    return result.inhabited;
             });
-            render(filteredResults);
+            render(sortedResults);
 
         }
     }
 
+
+
+
+/***
+
+            database.sort(function (value) {
+
+                if (value === true) {
+                    var filteredResults = database.filter(function (result) {
+                        return filteredResults;
+                    });
+                }
+
+            }) :
+               database.sort(function(value){
+                   if(value === false){
+                       var filteredResults = database.filter(function(result){
+                            return filteredResults;
+                   }
+                   }
+
+           });
+
+            render(sortedResults);
+       }
+***/
+
+
+
+/***
+            }
+
+                if(inhabited === true) {
+                    var filteredResults = database.filter(function (result) {
+                        return result.inhabited;
+                    });
+                    render(filteredResults);
+                }
+                if(inhabited === false){
+                    var filteredResults = database.filter(function (result) {
+                        return result.inhabited;
+                    });
+                    render(filteredResults);
+
+                }
+
+
+    }
+ ***/
+/***
+    function orderPrice(pricevalrange){
+        var pricesSorted = (pricevalrange === 'lowesttohighest'){
+
+        }
+    }
+****/
     document.querySelector('#inhabited').addEventListener('change', function(event){
-        var value = event.target.value === 'true';
-        orderBy(value);
+        //var value = event.target.value === 'true';
+        //orderBy(value);
+        orderBy(event.target.value);
     });
 
 
