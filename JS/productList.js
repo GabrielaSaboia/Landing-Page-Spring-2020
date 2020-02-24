@@ -262,7 +262,7 @@
 
 
             //return showInhabited || result.inhabited;
-            if(beach.inhabited === showInhabited){
+            if(result.inhabited === showInhabited){
                 return showInhabited;
             }
         });
