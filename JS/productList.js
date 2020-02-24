@@ -262,10 +262,10 @@
 
 
             //return showInhabited || result.inhabited;
-            if(result.inhabited === showInhabited){
+            if(showInhabited === true){
                 return showInhabited;
             }
-            else if(result.inhabited == false){
+            else if(showInhabited === false){
                 return showInhabited;
             }
         });
