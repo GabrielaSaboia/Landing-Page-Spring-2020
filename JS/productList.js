@@ -100,7 +100,7 @@
 
 
 
-    function orderBy(inhabited) {
+    function orderByInhabitants(inhabited) {
         if (inhabited == "true") {
             var sortedResults = (inhabited === 'true');
 
@@ -183,7 +183,7 @@
     document.querySelector('#inhabited').addEventListener('change', function(event){
         //var value = event.target.value === 'true';
         //orderBy(value);
-        orderBy(event.target.value);
+        orderByInhabitants(event.target.value);
     });
 
 
