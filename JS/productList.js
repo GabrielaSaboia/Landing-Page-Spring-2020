@@ -166,10 +166,19 @@
 
     function orderBy(inhabited) {			//booleans count as numbers. 1 =true .0 = false
         // Sort method varies based on what type of value we're sorting
-        var filteredResults = database.filter(function(result){
-            return result.inhabited;
-        });
-        render(filteredResults);
+        if(inhabited === true) {
+            var filteredResults = database.filter(function (result) {
+                return result.inhabited;
+            });
+            render(filteredResults);
+        }
+        if(inhabited === false){
+            var filteredResults = database.filter(function (result) {
+                return result.inhabited;
+            });
+            render(filteredResults);
+
+        }
     }
 
 
