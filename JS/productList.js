@@ -123,7 +123,7 @@
 
         }
     }
-    
+
     document.querySelector('#inhabited').addEventListener('change', function(event){
         //var value = event.target.value === 'true';
         //orderBy(value);
