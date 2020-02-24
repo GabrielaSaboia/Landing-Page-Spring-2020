@@ -262,7 +262,7 @@
 
 
             //return showInhabited || result.inhabited;
-            if(showInhabited === result.inhabited){
+            if(showInhabited === result.inhabited) {
                 return result.inhabited;
             }
             /***
