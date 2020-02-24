@@ -148,28 +148,13 @@
 
     function orderByPrice(price){
         if(price === "low") {
-            //var sortedPrices = (price === 'low');
-
-                var sortedPrices = database.sort(function (a, b) {
-                    //
-                    sortedPrices = a[price] - b[price];
-                    return sortedPrices;
-                });
-
-        }
-
-
-
-            ///
-                /***
-            var filteredresults = database.sort(function (a,b){
-                return a[price] - b[price];
+            var sortedPrices = database.sort(function (a, b) {
+                //
+                sortedPrices = a[price] - b[price];
+                return sortedPrices;
             });
 
-            sortedPrices = filteredresults;
-
         }
-                 ***/
         render(sortedPrices);
     }
 
