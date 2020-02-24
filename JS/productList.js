@@ -187,6 +187,11 @@
         orderBy(value);
     });
 
+    document.querySelector('#unnhabited').addEventListener('change', function(event){
+        var value = event.target.value === 'false';
+        orderBy(value);
+    });
+
 /***
 
     document.querySelector('#orderBy').addEventListener('change', function(event){
