@@ -261,7 +261,7 @@
             // Otherweise only show if published is TRUE
             return showInhabited || result.inhabited;
         });
-        renderList(filteredResults);
+        render(filteredResults);
     }
 
     document.querySelector('#inhabited').addEventListener('change', function(event){
