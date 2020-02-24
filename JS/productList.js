@@ -262,12 +262,14 @@
 
 
             //return showInhabited || result.inhabited;
-            if(showInhabited === true){
+            if(showInhabited === result.inhabited){
                 return showInhabited;
             }
+            /***
             else if(showInhabited === false){
                 return showInhabited;
             }
+             ***/
         });
         render(filteredResults);
     }
