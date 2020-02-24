@@ -266,7 +266,7 @@
                 return showInhabited;
             }
             else{
-                return result.inhabited;
+                return result.inhabited = false; 
             }
         });
         render(filteredResults);
