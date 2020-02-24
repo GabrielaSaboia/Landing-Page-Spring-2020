@@ -164,26 +164,28 @@
 
 
 
-    function orderBy(sortValue) {			//booleans count as numbers. 1 =true .0 = false
+    function orderBy(inhabited) {			//booleans count as numbers. 1 =true .0 = false
         // Sort method varies based on what type of value we're sorting
-        if(sortValue === true) {
-            //var convert = (sortValue === 'true');
-            var filteredResults = database.filter(function(result){
-                return result.inhabited;
-            });
-            render(filteredResults);
-        }
-        else if(sortValue === false){
-
-        }
+        var filteredResults = database.filter(function(result){
+            return inhabited || result.inhabited; 
+        });
+        render(filteredResults);
     }
 
 
     document.querySelector('#inhabited').addEventListener('change', function(event){
         // in this case value is a string that we need to convert to a boolean
         //var value = event.target.value ==='true'; //=== 'true';
-
-        orderBy(event.target.value);
+        if(event.target.value === 'true')
+        {
+            var value = event.target.value === 'true';
+            orderBy(value);
+        }
+        if(event.target.value === 'false')
+        {
+            var value = event.target.value === 'false';
+            orderBy(value);
+        }
     });
 
 /***
