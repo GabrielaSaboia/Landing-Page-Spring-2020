@@ -265,6 +265,9 @@
             if(result.inhabited === showInhabited){
                 return showInhabited;
             }
+            else{
+                return showInhabited === false;
+            }
         });
         render(filteredResults);
     }
