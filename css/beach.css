@@ -24,11 +24,12 @@ nav.navbar.navbar-dark{
 .price, .location{
     display: inline-block
 }
+/**/
 p {
     color: #fff;
     padding: 10px 35px;
 }
-
+***/
 footer{
     background-color: rgba(84, 84, 84, .3);
     bottom: 0;
