@@ -117,18 +117,12 @@
         }
     }
 
-
     document.querySelector('#inhabited').addEventListener('change', function(event){
         var value = event.target.value === 'true';
         orderBy(value);
     });
 
-    document.querySelector('#uninhabited').addEventListener('change', function(event){
-        var value = event.target.value === 'false';
-        orderBy(value);
-    });
-
-
+    
     function Location(ShowLocation){
         var locationresult = database.filter(function(beach){
             if(beach.location === ShowLocation){
