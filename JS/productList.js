@@ -274,7 +274,8 @@
 
     document.querySelector('#inhabited').addEventListener('change', function(event){
         // in this case value is a string that we need to convert to a boolean
-        var value = event.target.value === 'true';
+        var value = event.target.value //=== 'true';
+
         Inhabited(value);
     });
 
