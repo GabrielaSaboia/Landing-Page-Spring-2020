@@ -184,6 +184,8 @@
         orderByPrice(event.target.value);
     });
 
+
+    /***
     function orderByInhabitants(inhabited) {
         var a = new Array(10);
         ///if (inhabited === "true") {
@@ -199,26 +201,7 @@
                 }
     }
 
-
-
-/***
-
-                    if (sortedResults === result.inhabited)
-                //return sortedResults;
-                    return result.inhabited;
-            });
-            render(filteredresults);
-        } else if (inhabited === "false") {
-            var sortedResults = (inhabited === 'false');            //trying to convert to boolean false
-            var filteredresults = database.filter(function (result) {
-                if (sortedResults === result.inhabited)
-                    return result.inhabited;
-            });
-            render(filteredresults);
-        }
-    }
 ***/
-
 
 
 
