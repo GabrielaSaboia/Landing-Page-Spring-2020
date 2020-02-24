@@ -180,7 +180,7 @@
         renderList(sortedResults);
     }
 
-
+/***
 
     document.querySelector('#orderBy').addEventListener('change', function(event){
         // Event is the JavaScript event that transpired, in our change a CHANGE event.
@@ -189,7 +189,7 @@
         // Value has the name implies is the current value of the input element, if there is one
         orderBy(event.target.value);
     });
-
+***/
 
 
 
