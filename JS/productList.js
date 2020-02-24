@@ -253,6 +253,24 @@
     })
     ***/
 
+    function Inhabited(showInhabited) {
+        // If showPublished is TRUE, only display published results
+        // Filter will only inclue objects that return TRUE from it's query
+        var filteredResults = database.filter(function (result) {					//map will create an array of legnth of old value. filter returns true or false. true if value included. false if not
+            // If showPublished is TRUE, always show.											///fals e if you do not want to include it in array
+            // Otherweise only show if published is TRUE
+            return showInhabited || result.inhabited;
+        });
+        renderList(filteredResults);
+    }
+
+    document.querySelector('#inhabited').addEventListener('change', function(event){
+        // in this case value is a string that we need to convert to a boolean
+        var value = event.target.value === 'true';
+        Inhabited(value);
+    });
+
+
 
 })(); //wrapping entire file with locally exec function
       //variable scope: local scope
