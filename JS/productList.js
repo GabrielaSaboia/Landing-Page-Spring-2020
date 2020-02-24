@@ -100,8 +100,7 @@
 
 
 
-    function orderBy(inhabited) {			//booleans count as numbers. 1 =true .0 = false
-        // Sort method varies based on what type of value we're sorting
+    function orderBy(inhabited) {
         if (inhabited == "true") {
             var sortedResults = (inhabited === 'true');
 
@@ -113,7 +112,7 @@
             render(filteredresults);
         }
         else if (inhabited == "false") {
-            var sortedResults = (inhabited === 'false');
+            var sortedResults = (inhabited === 'false');            //trying to convert to boolean false
 
 
             var filteredresults = database.filter(function (result) {
