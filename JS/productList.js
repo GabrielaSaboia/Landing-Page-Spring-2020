@@ -123,63 +123,7 @@
 
         }
     }
-
-
-
-
-/***
-
-            database.sort(function (value) {
-
-                if (value === true) {
-                    var filteredResults = database.filter(function (result) {
-                        return filteredResults;
-                    });
-                }
-
-            }) :
-               database.sort(function(value){
-                   if(value === false){
-                       var filteredResults = database.filter(function(result){
-                            return filteredResults;
-                   }
-                   }
-
-           });
-
-            render(sortedResults);
-       }
-***/
-
-
-
-/***
-            }
-
-                if(inhabited === true) {
-                    var filteredResults = database.filter(function (result) {
-                        return result.inhabited;
-                    });
-                    render(filteredResults);
-                }
-                if(inhabited === false){
-                    var filteredResults = database.filter(function (result) {
-                        return result.inhabited;
-                    });
-                    render(filteredResults);
-
-                }
-
-
-    }
- ***/
-/***
-    function orderPrice(pricevalrange){
-        var pricesSorted = (pricevalrange === 'lowesttohighest'){
-
-        }
-    }
-****/
+    
     document.querySelector('#inhabited').addEventListener('change', function(event){
         //var value = event.target.value === 'true';
         //orderBy(value);
