@@ -265,7 +265,10 @@
             if(showInhabited === result.inhabited) {
                 return showInhabited;
             }
-            return result.inhabited;
+            else if(showInhabited !== result.inhabited){
+                showInhabited = 'false';
+                return showInhabited;
+            }
             /***
             else if(showInhabited === false){
                 return showInhabited;
