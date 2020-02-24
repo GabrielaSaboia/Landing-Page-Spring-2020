@@ -128,26 +128,6 @@
         orderBy(value);
     });
 
-/***
-
-    document.querySelector('#orderBy').addEventListener('change', function(event){
-        // Event is the JavaScript event that transpired, in our change a CHANGE event.
-        // Target is the element it was performed on, useful for when the event targets
-        // multiple elements.
-        // Value has the name implies is the current value of the input element, if there is one
-        orderBy(event.target.value);
-    });
-***/
-
-
-
-
-
-
-
-
-
-
 
     function Location(ShowLocation){
         var locationresult = database.filter(function(beach){
@@ -159,67 +139,12 @@
 
     }
 
-    function Price(ShowPrice){
-
-    }
-
-
-    /****
-    locdrop_Menu.addEventListener('change', function(event){
-        var value = event.target.selectedIndex;
-        Location(value);
-    });
-    ****/
-
-
-
-
-    /****
-    namedrop_Menu.addEventListener('change', function(event){
-        name = event.target.selectedIndex;
-        render()
-    })
-    ****/
     locdrop_Menu.addEventListener('change', function(event){
         var value = event.target.value;
         Location(value);
     });
-    /***
-    pricedrop_Menu.addEventListener('change', function(event){
-        price = event.target.selectedIndex;
-        render()
-    })
-    ***/
-/***
-    function Inhabited(showInhabited) {
-        // If showPublished is TRUE, only display published results
-        // Filter will only inclue objects that return TRUE from it's query
-        var filteredResults = database.filter(function (result) {					//map will create an array of legnth of old value. filter returns true or false. true if value included. false if not
-            // If showPublished is TRUE, always show.											///fals e if you do not want to include it in array
-            // Otherweise only show if published is TRUE
-
-
-            //return showInhabited || result.inhabited;
-            if(showInhabited === result.inhabited) {
-                return showInhabited;
-            }
-            else if(showInhabited !== result.inhabited){
-                showInhabited = 'false';
-                return showInhabited;
-            }
-
-            else if(showInhabited === false){
-                return showInhabited;
-            }
-
-        });
-        render(filteredResults);
-    }
- ***/
 
 
 
-})(); //wrapping entire file with locally exec function
-      //variable scope: local scope
 
-
+})();
