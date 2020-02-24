@@ -176,7 +176,7 @@
                 database.sort(function(a,b){
                     return a[price] - b[price];
                 });
-            render(sortedPrices)
+            render(sortedPrices);
         }
     }
     document.querySelector('#price').addEventListener('change', function (event) {
