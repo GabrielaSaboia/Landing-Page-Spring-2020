@@ -166,29 +166,21 @@
 
     function orderBy(sortValue) {			//booleans count as numbers. 1 =true .0 = false
         // Sort method varies based on what type of value we're sorting
-        var sortedResults = (sortValue === 'name') ?
-            mockDatabase.sort(function (a, b) { // Strings need to be sorted in a slightly more compldex way
-                var nameA = a.name.toUpperCase(); // ignore upper and lowercase
-                var nameB = b.name.toUpperCase(); // ignore upper and lowercase
-                // Sorts alphabetically.  -1 puts it before. 1 puts it after
-                if (nameA < nameB) {
-                    return -1;
-                }
-                if (nameA > nameB) {
-                    return 1;
-                }
-            }) :
-            mockDatabase.sort(function (a, b) { // Numbers a booleans are much simpler.
-                // Just need postive or negative number
-                // Object properties can be accessed through a string representing their name
+        if(sortValue === true) {
 
-                //Im assuming this is for assuming that the category is a number (can check Article Id)
-                return a[sortValue] - b[sortValue];
+        }
+        else if(sortValue === false){
 
-            });
-
-        renderList(sortedResults);
+        }
     }
+
+
+    document.querySelector('#inhabited').addEventListener('change', function(event){
+        // in this case value is a string that we need to convert to a boolean
+        //var value = event.target.value ==='true'; //=== 'true';
+
+        orderBy(event.target.value);
+    });
 
 /***
 
@@ -252,7 +244,7 @@
         render()
     })
     ***/
-
+/***
     function Inhabited(showInhabited) {
         // If showPublished is TRUE, only display published results
         // Filter will only inclue objects that return TRUE from it's query
@@ -269,21 +261,15 @@
                 showInhabited = 'false';
                 return showInhabited;
             }
-            /***
+
             else if(showInhabited === false){
                 return showInhabited;
             }
-             ***/
+
         });
         render(filteredResults);
     }
-
-    document.querySelector('#inhabited').addEventListener('change', function(event){
-        // in this case value is a string that we need to convert to a boolean
-        var value = event.target.value==='true'; //=== 'true';
-
-        Inhabited(value);
-    });
+ ***/
 
 
 
