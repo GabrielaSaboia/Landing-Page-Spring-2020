@@ -145,7 +145,7 @@
         var value = event.target.value;
         Location(value);
     });
-
+    /***
     function orderByPrice(price){
         if(price === "low") {
             var sortedPrices = database.sort(function (a, b) {
@@ -157,6 +157,7 @@
         }
         render(sortedPrices);
     }
+     ****/
 
     document.querySelector('#price').addEventListener('change', function (event) {
         orderByPrice(event.target.value);
