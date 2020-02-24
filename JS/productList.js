@@ -107,7 +107,8 @@
 
             var filteredresults = database.filter(function (result) {
                 if (sortedResults === result.inhabited)
-                    return sortedResults;
+                    //return sortedResults;
+                    return result.inhabited;
             });
             render(filteredresults);
 
