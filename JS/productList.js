@@ -95,10 +95,12 @@
             `)
         }).reduce((a, b) => a.concat(b), "")    //a (empty string) same thing consistently. b is new thing. b element in list.
 
-
+        /***
         cardContainer.innerHtml.forEach(function(cards){
             cardContainer.innerHTML += cards;
         });
+
+         ***/
 
 
 
