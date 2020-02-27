@@ -111,6 +111,9 @@
 
 
     function orderByInhabitants(inhabited) {
+        if(!inhabited) return render(database);
+
+
         if (inhabited === "true") {
             var sortedResults = (inhabited === 'true');
 
@@ -128,7 +131,7 @@
 
             var filteredresults = database.filter(function (result) {
                 if (sortedResults === result.inhabited)
-                    return result.inhabited;
+                    return !result.inhabited;
             });
             render(filteredresults);
         }
@@ -142,6 +145,8 @@
 
 
     function Location(ShowLocation){
+        if (!ShowLocation) return render(database);
+
         var locationresult = database.filter(function(beach){
             if(beach.location === ShowLocation){
                 return ShowLocation;
@@ -198,6 +203,7 @@
         orderByPrice(event.target.value);
     });
 
+    //function category()
 
     /***
     function orderByInhabitants(inhabited) {
