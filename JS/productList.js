@@ -111,7 +111,6 @@
 
 
     function orderByInhabitants(inhabited) {
-        if(!inhabited) return render(database);
 
 
         if (inhabited === "true") {
