@@ -216,7 +216,8 @@
 
                 database.sort(function(a,b){
 
-                return b[price] - a[price];
+                //return b[price] - a[price];
+                    return;
 
             });
             render(sortedPrices);
