@@ -218,7 +218,7 @@
                      ***/
                 }):
 
-            database.sort(function(a,b){
+                database.sort(function(a,b){
 
                 return b[price] - a[price];
 
