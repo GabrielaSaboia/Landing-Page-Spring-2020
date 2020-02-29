@@ -199,7 +199,7 @@
 
             render(sortedPrices);
         }
-        else if(price =="high"){
+        else if(price ==="high"){
             var sortedPrices = (price === 'high');
                 database.sort(function(a,b){
 
