@@ -162,11 +162,11 @@
                 var nameA = a.name.toUpperCase(); // ignore upper and lowercase
                 var nameB = b.name.toUpperCase(); // ignore upper and lowercase
                 // Sorts alphabetically.  -1 puts it before. 1 puts it after
-                if (nameA < nameB) {
-                    return -1;
-                }
                 if (nameA > nameB) {
                     return 1;
+                }
+                if (nameA < nameB) {
+                    return -1;
                 }
             }) :
             database.sort(function (a, b) { // Numbers a booleans are much simpler.
