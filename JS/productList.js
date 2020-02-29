@@ -208,12 +208,9 @@
                     if (price2 > price1){
                         return 1;
                     }
-                    if (price2 < price1){
+                    if (price2 < price1) {
                         return -1;
                     }
-
-
-
                 });
             render(sortedPrices);
         }
