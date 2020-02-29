@@ -205,8 +205,11 @@
                     var price1 = a.price;
                     var price2 = b.price;
 
-                    if (price2 > price1){
+                    if (price2 < price1){
                         return 1;
+                    }
+                    if (price2 > price1){
+                        return -1; 
                     }
                     /***
                        if (price2 < price1) {
