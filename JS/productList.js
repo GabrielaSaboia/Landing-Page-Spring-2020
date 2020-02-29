@@ -180,7 +180,6 @@
             var sortedPrices = (price === 'low')?
                 database.sort(function(a,b){
                     var price1 = a.price;
-
                     var price2 = b.price;
 
                     if(price2 > price1){
