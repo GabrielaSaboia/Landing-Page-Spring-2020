@@ -166,8 +166,6 @@
                 if (nameA < nameB) {
                     return -1;
                 }
-                //return render(database)
-                return render(sortedResults);
             }) :
             database.sort(function (a, b) {
                 return a[sortValue] - b[sortValue];
