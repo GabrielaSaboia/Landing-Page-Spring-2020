@@ -198,7 +198,7 @@
             render(sortedPrices);
         }
         else if(price =="high"){
-                databse.sort(function(a,b){
+                database.sort(function(a,b){
 
                     return b[price] - a[price];
 
