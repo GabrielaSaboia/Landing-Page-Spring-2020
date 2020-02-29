@@ -129,7 +129,7 @@
 
 
             var filteredresults = database.filter(function (result) {
-                if (sortedResults === result.inhabited)
+                //if (sortedResults === result.inhabited)
                     return !result.inhabited;
             });
             render(filteredresults);
