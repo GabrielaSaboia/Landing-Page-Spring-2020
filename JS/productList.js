@@ -167,21 +167,20 @@
                     return -1;
                 }
                 //return render(database)
+                return render(sortedResults);
             }) :
             database.sort(function (a, b) {
                 return a[sortValue] - b[sortValue];
 
             });
-
-        return render(sortedResults);
+        render(sortedResults);
     }
 
 
     locdrop_Menu.addEventListener('change', function(event){
         var value = event.target.value;
-        if(value == "AtoZ"){
-            orderByLocation(value);
-        }
+        orderByLocation(value);
+
         Location(value);
     });
     /***
