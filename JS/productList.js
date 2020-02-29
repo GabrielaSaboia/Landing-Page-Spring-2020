@@ -173,13 +173,13 @@
 
             });
 
-        return render(sortedResults);
+        render(sortedResults);
     }
 
 
     locdrop_Menu.addEventListener('change', function(event){
         var value = event.target.value;
-        orderByLocation(value);
+        return(orderByLocation(value));
         Location(value);
     });
 
