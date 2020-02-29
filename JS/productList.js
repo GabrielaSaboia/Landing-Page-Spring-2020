@@ -198,7 +198,6 @@
             render(sortedPrices);
         }
         else if(price =="high"){
-            var sortedPrices = (price === 'high')?
                 databse.sort(function(a,b){
 
                     return b[price] - a[price];
