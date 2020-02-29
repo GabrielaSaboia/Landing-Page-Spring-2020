@@ -208,10 +208,18 @@
                     if (price2 > price1){
                         return 1;
                     }
-                    if (price2 < price1) {
+                    /***
+                       if (price2 < price1) {
                         return -1;
-                    }
-                });
+                       }
+                     ***/
+                }):
+
+            database.sort(function(a,b){
+
+                return b[price] - a[price];
+
+            });
             render(sortedPrices);
         }
     }
