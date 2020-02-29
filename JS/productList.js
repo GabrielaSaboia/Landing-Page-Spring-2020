@@ -179,14 +179,18 @@
 
     locdrop_Menu.addEventListener('change', function(event){
         var value = event.target.value;
-        orderByLocation(value);
-        //Location(value);
+        if(value == "AtoZ"){
+            orderByLocation(value);
+        }
+        Location(value);
     });
+    /***
     locdrop_Menu.addEventListener('change', function(event){
         var value = event.target.value;
         //return(orderByLocation(value));
         Location(value);
     });
+     ****/
 
     function orderByPrice(price){
         if (!price) return render(database);
