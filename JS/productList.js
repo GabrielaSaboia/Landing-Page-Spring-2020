@@ -174,6 +174,8 @@
      ****/
 
     function orderByPrice(price){
+        if (!price) return render(database);
+
         if(price === "low"){
             var sortedPrices = (price === 'low')?
                 database.sort(function(a,b){
