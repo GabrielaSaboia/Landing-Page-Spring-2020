@@ -156,29 +156,24 @@
     }
 
     function orderByLocation(sortValue){
-        // Sort method varies based on what type of value we're sorting
         var sortedResults = (sortValue === 'AtoZ') ?
-            database.sort(function (a, b) { // Strings need to be sorted in a slightly more compldex way
-                var nameA = a.name.toUpperCase(); // ignore upper and lowercase
-                var nameB = b.name.toUpperCase(); // ignore upper and lowercase
-                // Sorts alphabetically.  -1 puts it before. 1 puts it after
+            database.sort(function (a, b) {
+                var nameA = a.name.toUpperCase();
+                var nameB = b.name.toUpperCase();
                 if (nameA > nameB) {
                     return 1;
                 }
                 if (nameA < nameB) {
                     return -1;
                 }
+                //return render(database)
             }) :
-            database.sort(function (a, b) { // Numbers a booleans are much simpler.
-                // Just need postive or negative number
-                // Object properties can be accessed through a string representing their name
-
-                //Im assuming this is for assuming that the category is a number (can check Article Id)
+            database.sort(function (a, b) {
                 return a[sortValue] - b[sortValue];
 
             });
 
-        render(sortedResults);
+        return render(sortedResults);
     }
 
 
