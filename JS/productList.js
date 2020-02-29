@@ -159,19 +159,6 @@
         var value = event.target.value;
         Location(value);
     });
-    /***
-    function orderByPrice(price){
-        if(price === "low") {
-            var sortedPrices = database.sort(function (a, b) {
-                //
-                sortedPrices = a[price] - b[price];
-                return sortedPrices;
-            });
-
-        }
-        render(sortedPrices);
-    }
-     ****/
 
     function orderByPrice(price){
         if (!price) return render(database);
@@ -192,8 +179,6 @@
                 }) :
 
                 database.sort(function(a,b){
-
-                    //return a[price] - b[price];
                     return;
 
                 });
@@ -216,11 +201,10 @@
                 }):
 
                 database.sort(function(a,b){
-
-                    //return b[price] - a[price];
-                    //return;
+                    return;
 
             });
+
             render(sortedPrices);
         }
     }
