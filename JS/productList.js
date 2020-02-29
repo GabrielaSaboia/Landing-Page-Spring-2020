@@ -197,6 +197,17 @@
 
             render(sortedPrices);
         }
+        else if(price =="high"){
+            var sortedPrices = (price === 'high')?
+                databse.sort(function(a,b){
+
+                    return b[price] - a[price];
+
+
+
+                });
+            render(sortedPrices);
+        }
     }
     document.querySelector('#price').addEventListener('change', function (event) {
         orderByPrice(event.target.value);
